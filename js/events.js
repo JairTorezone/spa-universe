@@ -1,27 +1,53 @@
 import * as el from "./element.js";
 
 export function addColorWihteHome() {
-  addWhiteHome();
-
-  addWhiteUniverse();
-
-  addWhiteExploration();
+  addMenuBoldHome();
+  addMenuBoldExploration();
+  addMenuBoldUniverse();
 }
 
-function addWhiteHome() {
-  el.home.addEventListener("click", () => {
-    el.home.classList.toggle("colorWhite");
+const home = el.home;
+const universe = el.universe;
+const exploration = el.exploration;
+
+function addMenuBoldHome() {
+  home.addEventListener("click", () => {
+    home.classList.add("colorWhite");
+
+    if (universe.classList.contains("colorWhite")) {
+      universe.classList.remove("colorWhite");
+    }
+
+    if (exploration.classList.contains("colorWhite")) {
+      exploration.classList.remove("colorWhite");
+    }
   });
 }
 
-function addWhiteUniverse() {
-  el.universe.addEventListener("click", () => {
-    el.universe.classList.add("colorWhite");
+function addMenuBoldExploration() {
+  exploration.addEventListener("click", () => {
+    exploration.classList.add("colorWhite");
+
+    if (universe.classList.contains("colorWhite")) {
+      universe.classList.remove("colorWhite");
+    }
+
+    if (home.classList.contains("colorWhite")) {
+      home.classList.remove("colorWhite");
+    }
   });
 }
 
-function addWhiteExploration() {
-  el.exploration.addEventListener("click", () => {
-    el.exploration.classList.toggle("colorWhite");
+function addMenuBoldUniverse() {
+  universe.addEventListener("click", () => {
+    universe.classList.add("colorWhite");
+
+    if (home.classList.contains("colorWhite")) {
+      home.classList.remove("colorWhite");
+    }
+
+    if (exploration.classList.contains("colorWhite")) {
+      exploration.classList.remove("colorWhite");
+    }
   });
 }
