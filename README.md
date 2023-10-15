@@ -1,7 +1,7 @@
 # <h1 align="center"> SPA Universe </h1>
 
 <p align="center">
- SPA Single Page Application feita com html, css e javascript para desenvolver a lógica, a manipulação da DOM, a utilização de funções callback, utilização de promises, requisições <br/>
+ SPA Single Page Application feita com html, css e javascript para desenvolver a lógica, a manipulação da DOM, a utilização de funções callback, utilização de promises, requisições </p> <br/>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -10,9 +10,9 @@
   <a href="#memo-licença">Licença</a>
 </p>
 
-<p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
-</p>
+<!-- LICENSE MIT -->
+
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/JairTorezone/spa-universe/blob/main/LICENSE)
 
 <br>
 
